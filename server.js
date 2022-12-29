@@ -25,7 +25,7 @@ connection.connect();
 
 connection.query('SELECT * from user',(error,rows, fields) => {
     if(error) throw error;
-    console.log('User info is : ',rows);
+    console.log('MySQL DB Connect success ! ');
 });
 
 connection.end();
