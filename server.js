@@ -23,7 +23,7 @@ const connection = mysql.createConnection({
 
 connection.connect();
 
-connection.query('SELECT * from user',(error,rows, fields) => {
+connection.query('SELECT * from userTable',(error,rows, fields) => {
     if(error) throw error;
     console.log('MySQL DB Connect success ! ');
 });
