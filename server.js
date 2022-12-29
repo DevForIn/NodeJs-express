@@ -4,6 +4,11 @@ const app = express();
 const mysql = require('mysql');
 const bodyParser = require('body-parser');
 
+// https://sirius7.tistory.com/59
+const session = require('express-session');
+const FileStore = require('session-file-store')(session);
+
+
 // port wait for 3000 and play function !
 app.listen(3000, function(){
     console.log('listening on 3000')
