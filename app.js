@@ -109,7 +109,6 @@ app.delete('/cats/:id', async(req,res) => {
     }
 });
 
-// 기본 / 화면 
 app.get('/', function (req, res) {
     res.send('test');
 });
