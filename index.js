@@ -7,8 +7,10 @@ app.use(express.json()); // json 파싱 미들웨어
 
 
 // MongoDB Connect
-mongoose.connect('mongodb://localhost:27017/test',
-    { useNewUrlParser: true, useUnifiedTopology: true }
+mongoose.connect('mongodb://localhost:27017/test',{ 
+        useNewUrlParser: true,
+        useUnifiedTopology: true 
+    }
 );
 
 // 연결 확인
@@ -49,15 +51,53 @@ app.get('/cats', async (req, res) => {
     }
 });
 
+// R find Id
+app.get('/cats/:id', async (req, res) => {
+    try{
+        const cat = await Cat.findById(req.params.id)
+        if(!cat){
+            return res.status(404).send("not find this id...");
+        }
+        res.status(200).send(cat);
+
+    }catch(error){
+        res.status(400).send(error);
+    }
+});
 
 
+// U
+app.put('/cats/:id', async(req,res) => {
+    try{
+        const cat = await Cat.findByIdAndUpdate(req.params.id, req.body,{
+            new:true,
+            runValidators:true,
+        });
 
+        if(!cat){
+            return res.status(404).send("not find this id...");
+        }
+        res.status(200).send(cat);
 
+    }catch(error){
+        res.status(400).send(error);
+    }
+})
 
+// D
+app.delete('/cats/:id'), async(req,res) => {
+    try {
+        const cat = await Cat.findByIdAndDelete(req.params.id);
+        
+        if(!cat){
+            return res.status(404).send();
+        }
+    } catch (error) {
+        res.status(500).send(error);
+    }
+}
 
-
-
-
+// 기본 / 화면 
 app.get('/', function (req, res) {
     res.send('test');
 });
