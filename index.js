@@ -50,6 +50,15 @@ app.get('/cats', async (req, res) => {
     }
 });
 
+app.get('/cats/ids', async (req, res) => {
+    try{
+        const cats = await Cat.find().select('_id');
+        res.status(200).send(cats);
+    }catch(error){
+        res.status(500).send(error);
+    }
+});
+
 // R find Id
 app.get('/cats/:id', async (req, res) => {
     try{
@@ -57,12 +66,14 @@ app.get('/cats/:id', async (req, res) => {
         if(!cat){
             return res.status(404).send("not find this id...");
         }
+        console.log(cat);
         res.status(200).send(cat);
 
     }catch(error){
         res.status(400).send(error);
     }
 });
+
 
 
 // U
@@ -102,6 +113,7 @@ app.delete('/cats/:id', async(req,res) => {
 app.get('/', function (req, res) {
     res.send('test');
 });
+
 
 var server = app.listen(3000,function() {
     var host = server.address().address;
