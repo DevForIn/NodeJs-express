@@ -15,7 +15,7 @@ mongoose.connect('mongodb://localhost:27017/test',{
 
 // 연결 확인
 mongoose.connection.once('open', () => {
-    console.log('Connected to MongoDB');
+    console.log('Connected to MongoDB Complate');
 });
 
 // Schema 및 model 정의
@@ -118,5 +118,5 @@ var server = app.listen(3000,function() {
     var host = server.address().address;
     var port = server.address().port;
 
-    console.log('server is working ! PORT : ', port);
+    console.log('server is working ! \nPORT is', port);
 });
