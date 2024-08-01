@@ -28,8 +28,7 @@ const catSchema = new mongoose.Schema({
 
 const Cat = mongoose.model('Cat',catSchema);
 
-// C R U D Start ! 
-
+// C R U D Start 
 // C
 app.post('/cats',async (req, res) => {
     try{
@@ -74,6 +73,7 @@ app.put('/cats/:id', async(req,res) => {
             runValidators:true,
         });
 
+        // id와 같은 형식이면서 없으면 null undefine 
         if(!cat){
             return res.status(404).send("not find this id...");
         }
@@ -85,17 +85,18 @@ app.put('/cats/:id', async(req,res) => {
 })
 
 // D
-app.delete('/cats/:id'), async(req,res) => {
+app.delete('/cats/:id', async(req,res) => {
     try {
         const cat = await Cat.findByIdAndDelete(req.params.id);
         
         if(!cat){
-            return res.status(404).send();
+            return res.status(404).send("not find this id...");
         }
+        res.status(200).send(cat);
     } catch (error) {
         res.status(500).send(error);
     }
-}
+});
 
 // 기본 / 화면 
 app.get('/', function (req, res) {
