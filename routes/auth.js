@@ -1,6 +1,6 @@
 const express = require('express');
-const jwt = require('jsonwebtoken');
 const User = require('../models/User')
+const jwt = require('jsonwebtoken')
 const router = express.Router();
 
 // 회원가입
@@ -10,9 +10,11 @@ router.post('/register', async (req,res) => {
         //유저 생성
         const newUser = new User({ username, password});
         await newUser.save();
-        req.statusCode(201).json({message: 'User registered successfully'});
+        res.status(201).json({message: 'User registered successfully'});
     }catch(error){
         res.status(400).json({ error: 'Registeration failed'});
+        console.log(error.message);
+
     }
 });
 
@@ -32,27 +34,14 @@ router.post('/login', async (req, res) => {
 
         // JWT 토큰 생성
         const token = jwt.sign({ id:user._id, username : user.username }, process.env.JWT_SECRET, { expiresIn: '1h'});
-        res.json({ token });
+
+        // 헤더에 토큰 생성
+        res.header('Authorization', 'Bearer ${token}').send({ message : 'Logged in successfully'})
+        console.log(token)
     }catch(error){
         res.status(400).json({error : 'Login failed'});
+        console.log(error.message);
     }    
 });
 
-// 토큰 인증 미들웨어
-const authenticateToken = (req,res,next) => {
-    const authHeader = req.headers['authorization'];
-    const token = authHeader && authHeader.split(' '[1]);
-
-    if(!token) return res.sendStatus(401);
-
-    jwt.verify(token, process.env.JWT_SECRET, (err,user) => {
-        if(err) return res.sendStatus(403);
-        req.user = user;
-        next();S
-    });
-};
-
-// 인증된 사용자만 접근 가능한 라우트 예시 
-router.get('/protected', authenticateToken, (req,res) =>{
-    res.json({message : 'Hello, ${req.user.username}!'});
-});
+module.exports = router;
