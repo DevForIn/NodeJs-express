@@ -1,7 +1,11 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const app = express();
+const dotenv = require('dotenv');
+const authRoutes = require('./routes/auth');
 
+dotenv.config();
+
+const app = express();
 
 app.use(express.json()); // json 파싱 미들웨어
 
@@ -122,3 +126,4 @@ var server = app.listen(3000,function() {
 
     console.log('server is working ! \nPORT is', port);
 });
+
