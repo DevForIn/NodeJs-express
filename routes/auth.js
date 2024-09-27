@@ -36,7 +36,8 @@ router.post('/login', async (req, res) => {
         const token = jwt.sign({ id:user._id, username : user.username }, process.env.JWT_SECRET, { expiresIn: '1h'});
 
         // 헤더에 토큰 생성
-        res.header('Authorization', 'Bearer ${token}').send({ message : 'Logged in successfully'})
+        res.header('Authorization', `Bearer ${token}`).send({ message: 'Logged in successfully' });
+
         console.log(token)
     }catch(error){
         res.status(400).json({error : 'Login failed'});
