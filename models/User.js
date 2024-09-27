@@ -1,25 +1,31 @@
-const mongoose = require('mongoose');
-const bcrypt = require('bcryptjs');
+const { Model, DataTypes } = require('sequelize');
+const sequelize = require('../config/database'); // Sequelize 인스턴스 가져오기
 
-// 사용자 스키마 정의
-const userSchema = new mongoose.Schema({
-    username: { type:String, required: true, unique: true},
-    password: { type:String, required: true},
+class User extends Model {
+    // 비밀번호 비교 메서드 추가
+    async comparePassword(password) {
+        // 비밀번호 비교 로직 (예: bcrypt를 사용하여 해시된 비밀번호와 비교)
+        const bcrypt = require('bcryptjs');
+        return await bcrypt.compare(password, this.password);
+    }
+}
+
+User.init({
+    username: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        unique: true, // 사용자 이름의 고유성 보장
+    },
+    password: {
+        type: DataTypes.STRING,
+        allowNull: false,
+    },
+}, {
+    sequelize,
+    modelName: 'user',
 });
 
-// 비밀번호를 저장하기 전에 암호화
-userSchema.pre('save',async function (next) {
-    if( !this.isModified('password')) return next();
-    const salt = await bcrypt.genSalt(10);
-    this.password = await bcrypt.hash(this.password, salt);
-    next();
-});
-
-// 비밀번호 비교 메서드
-userSchema.methods.comparePassword = async function (password) {
-    return bcrypt.compare(password, this.password);
-};
-
-const User = mongoose.model('User',userSchema);
+// 테이블 동기화 (없으면 생성)
+User.sync();
 
 module.exports = User;
