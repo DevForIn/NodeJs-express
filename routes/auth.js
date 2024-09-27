@@ -2,19 +2,23 @@ const express = require('express');
 const User = require('../models/User')
 const jwt = require('jsonwebtoken')
 const router = express.Router();
+const bcrypt = require('bcryptjs');
 
 // 회원가입
 router.post('/register', async (req,res) => {
     const { username, password} = req.body;
     try{
+
+        // 비밀번호 해싱
+        const hashePassword = await bcrypt.hash(password,10);
+
         //유저 생성
-        const newUser = new User({ username, password});
-        await newUser.save();
+        const newUser = await User.create({ username, password : hashePassword});
         res.status(201).json({message: 'User registered successfully'});
     }catch(error){
         res.status(400).json({ error: 'Registeration failed'});
         console.log(error.message);
-
+ 
     }
 });
 
@@ -22,7 +26,8 @@ router.post('/register', async (req,res) => {
 router.post('/login', async (req, res) => {
     const { username, password } = req.body;
     try{
-        const user = await User.findOne({username});
+        const user = await User.findOne({ where : { username}});
+        
         if(!user){
             return res.status(400).json({ message : 'Invalid username or password'});
         }
@@ -38,7 +43,6 @@ router.post('/login', async (req, res) => {
         // 헤더에 토큰 생성
         res.header('Authorization', `Bearer ${token}`).send({ message: 'Logged in successfully' });
 
-        console.log(token)
     }catch(error){
         res.status(400).json({error : 'Login failed'});
         console.log(error.message);

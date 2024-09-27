@@ -1,13 +1,24 @@
-const mongoose = require('mongoose');
+const { Model, DataTypes } = require('sequelize');
+const sequelize = require('../config/database'); // Sequelize 인스턴스 가져오기
 
-// Schema 및 model 정의
-const catSchema = new mongoose.Schema({
-    name: String,
-    age: Number,
-    bread: String
+class Cat extends Model {}
+
+Cat.init({
+    name: {
+        type: DataTypes.STRING,
+        allowNull: false,
+    },
+    age: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+    },
+    bread: {
+        type: DataTypes.STRING,
+        allowNull: false,
+    },
+}, {
+    sequelize,
+    modelName: 'cat',
 });
-
-
-const Cat = mongoose.model('Cat',catSchema);
 
 module.exports = Cat;

@@ -4,29 +4,20 @@ const Cat = require('../models/Cat'); // Cat 모델 가져오기
 
 // C R U D Start 
 // C
-router.post('/cats',async (req, res) => {
+router.post('/cats',async (req, res) =>{
     try{
-        const newCat = new Cat(req.body);
-        await newCat.save();
+        const newCat = await Cat.create(req.body);
         res.status(201).send(newCat);
     } catch(error){
         res.status(400).send(error);
     }
 });
 
+
 // R
 router.get('/cats', async (req, res) => {
     try{
-        const cats = await Cat.find();
-        res.status(200).send(cats);
-    }catch(error){
-        res.status(500).send(error);
-    }
-});
-
-router.get('/cats/ids', async (req, res) => {
-    try{
-        const cats = await Cat.find().select('_id');
+        const cats = await Cat.findAll();
         res.status(200).send(cats);
     }catch(error){
         res.status(500).send(error);
@@ -36,7 +27,7 @@ router.get('/cats/ids', async (req, res) => {
 // R find Id
 router.get('/cats/:id', async (req, res) => {
     try{
-        const cat = await Cat.findById(req.params.id)
+        const cat = await Cat.findByPk(req.params.id);
         if(!cat){
             return res.status(404).send("not find this id...");
         }
@@ -48,38 +39,53 @@ router.get('/cats/:id', async (req, res) => {
     }
 });
 
+// R find all Ids
+router.get('/cats/ids/all', async (req, res) => {
+    try {
+        const cats = await Cat.findAll({
+            attributes: ['id'], // ID만 가져오기
+        });
+        if (!cats || cats.length === 0) {
+            return res.status(404).send("No cats found.");
+        }
+        res.status(200).send(cats);
+    } catch (error) {
+        res.status(400).send(error);
+    }
+});
+
 
 
 // U
 router.put('/cats/:id', async(req,res) => {
     try{
-        const cat = await Cat.findByIdAndUpdate(req.params.id, req.body,{
-            new:true,
-            runValidators:true,
-        });
-
-        // id와 같은 형식이면서 없으면 null undefine 
+        const cat = await Cat.findByPk(req.params.id)
         if(!cat){
             return res.status(404).send("not find this id...");
         }
+
+        await cat.update(req.body);
         res.status(200).send(cat);
 
     }catch(error){
         res.status(400).send(error);
     }
-})
+});
 
 // D
 router.delete('/cats/:id', async(req,res) => {
     try {
-        const cat = await Cat.findByIdAndDelete(req.params.id);
+        const cat = await Cat.findByPk(req.params.id);
         
         if(!cat){
             return res.status(404).send("not find this id...");
         }
+
+        await cat.destroy(cat);
         res.status(200).send(cat);
     } catch (error) {
         res.status(500).send(error);
     }
 });
+
 module.exports = router;
