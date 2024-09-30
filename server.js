@@ -40,16 +40,11 @@ app.use(cors({    origin: 'http://localhost:3000' }));
 // 정적 파일 제공
 app.use(express.static(path.join(__dirname, 'public'))); // 'public' 폴더에 HTML 파일 넣기
 
-
-
-// 푸시 알림 라우트 추가
-app.use('/api/v3', notificationRoutes);
+// 인증이 필요없는 인증 관련 라우트
+app.use('/api/v1', authRoutes);
 
 // 인증이 필요한 모든 API에 `/api/v1` 경로 적용
 app.use('/api/v2', authenticateToken, catRoutes);
-
-// 인증이 필요없는 인증 관련 라우트
-app.use('/api/v1', authRoutes);
 
 // 푸시 알림 라우트 추가
 app.use('/api/v3', notificationRoutes);
