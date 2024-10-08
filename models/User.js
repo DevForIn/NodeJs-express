@@ -24,6 +24,10 @@ User.init({
         type: DataTypes.TEXT,
         allowNull: true, // 유저가 로그인할 때 저장되므로 초기엔 null일 수 있음
     },
+    refresh_token: {
+        type: DataTypes.TEXT,
+        allowNull: true, // 유저가 로그인할 때 저장되므로 초기엔 null일 수 있음
+    },
 }, {
     sequelize,
     modelName: 'user',

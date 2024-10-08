@@ -5,7 +5,7 @@ const authRoutes = require('./routes/auth');
 const catRoutes = require('./routes/cats')
 
 // 미들웨어 가져오기
-const authenticateToken = require('./middleware/authenticateToken');
+const { authenticateToken }  = require('./middleware/authenticateToken');
 const cors = require('cors'); 
 const path = require('path'); // path 모듈 추가
 
@@ -39,6 +39,8 @@ app.use(cors({    origin: 'http://localhost:3000' }));
 
 // 정적 파일 제공
 app.use(express.static(path.join(__dirname, 'public'))); // 'public' 폴더에 HTML 파일 넣기
+
+
 
 // 인증이 필요없는 인증 관련 라우트
 app.use('/api/v1', authRoutes);

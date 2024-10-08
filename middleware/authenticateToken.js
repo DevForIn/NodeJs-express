@@ -17,7 +17,22 @@ const authenticateToken = (req,res,next) => {
     });
 };
 
-module.exports = authenticateToken;
+const authenticateRefreshToken = (req, res, next) => {
+    
+    const refreshToken = req.body.refreshToken;
+
+    if(!refreshToken) return res.sendStatus(401);
+
+    jwt.verify(refreshToken, process.env.JWT_SECRET_REFRESH, (err, user) => {
+        
+        if(err) return res.sendStatus(403);
+
+        req.user = user;
+        next();
+    });
+};
+
+module.exports = { authenticateToken, authenticateRefreshToken };
 
 
 
