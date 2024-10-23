@@ -67,14 +67,22 @@ router.post('/login', async (req, res) => {
 });
 
 // 리프레시 토큰을 사용해 새로운 액세스 토큰 발급
-router.post('/token', authenticateRefreshToken, (req, res) => {
+router.post('/token', authenticateRefreshToken, async (req, res) => {
 
     const user = req.user;
 
     // 새로운 액세스 토큰 발급
     const newAccessToken = jwt.sign({ id: user.id, username: user.username }, process.env.JWT_SECRET, { expiresIn: '1h' });
 
-    res.json({ token: newAccessToken });
+    try{
+        await User.update({
+            fcm_token : newAccessToken
+        });
+        res.json({ token: newAccessToken });
+    }catch(error){
+        console.log('Error updating token :', error.message);
+        res.status(500).json({ error : 'Failed to update token'});
+    }    
 });
 
 module.exports = router;
