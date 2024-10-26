@@ -14,13 +14,13 @@ const admin = require('firebase-admin');
 // push 알림 라우트
 const notificationRoutes = require('./routes/notifications');
 // Firebase 설정 파일 불러오기
-const serviceAccount = require('./push/firebase.json');
+// const serviceAccount = require('./push/firebase.json');
 
-admin.initializeApp({
-    credential: admin.credential.cert(serviceAccount)
-  });
+// admin.initializeApp({
+//     credential: admin.credential.cert(serviceAccount)
+//   });
 
-dotenv.config();
+// dotenv.config();
 
 const app = express();
 app.use(express.json()); // json 파싱 미들웨어
