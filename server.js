@@ -2,7 +2,6 @@ const express = require('express');
 const sequelize = require('./config/database'); // database.js에서 sequelize 인스턴스 가져오기
 const dotenv = require('dotenv');
 const authRoutes = require('./routes/auth');
-const catRoutes = require('./routes/cats')
 
 // 미들웨어 가져오기
 const { authenticateToken }  = require('./middleware/authenticateToken');
@@ -46,7 +45,7 @@ app.use(express.static(path.join(__dirname, 'public'))); // 'public' 폴더에 H
 app.use('/api/v1', authRoutes);
 
 // 인증이 필요한 모든 API에 `/api/v1` 경로 적용
-app.use('/api/v2', authenticateToken, catRoutes);
+app.use('/api/v2', authenticateToken);
 
 // 푸시 알림 라우트 추가
 app.use('/api/v3', notificationRoutes);
