@@ -4,9 +4,9 @@
   "settings": {
     "width": 2000,
     "height": 2000,
-    "scrollTop": 0,
-    "scrollLeft": -368.2498,
-    "zoomLevel": 0.93,
+    "scrollTop": -160.1289,
+    "scrollLeft": -193.5267,
+    "zoomLevel": 0.72,
     "show": 431,
     "database": 16,
     "databaseName": "O-Health",
@@ -110,7 +110,7 @@
           "color": ""
         },
         "meta": {
-          "updateAt": 1730124124212,
+          "updateAt": 1730124124213,
           "createAt": 1728283661029
         }
       },
@@ -152,7 +152,7 @@
           "color": ""
         },
         "meta": {
-          "updateAt": 1730124137880,
+          "updateAt": 1730124137881,
           "createAt": 1729942595284
         }
       },
@@ -194,7 +194,7 @@
           "color": ""
         },
         "meta": {
-          "updateAt": 1730124396264,
+          "updateAt": 1730124396269,
           "createAt": 1729942757896
         }
       },
@@ -234,7 +234,7 @@
           "color": ""
         },
         "meta": {
-          "updateAt": 1730124139107,
+          "updateAt": 1730124139109,
           "createAt": 1729943080353
         }
       },
@@ -273,7 +273,7 @@
           "color": ""
         },
         "meta": {
-          "updateAt": 1730124132000,
+          "updateAt": 1730124132001,
           "createAt": 1729943189004
         }
       },
@@ -308,7 +308,7 @@
           "color": ""
         },
         "meta": {
-          "updateAt": 1730124146862,
+          "updateAt": 1730124146863,
           "createAt": 1729943669391
         }
       },
@@ -362,7 +362,7 @@
           "color": ""
         },
         "meta": {
-          "updateAt": 1730124450115,
+          "updateAt": 1730124450126,
           "createAt": 1729944075250
         }
       },
@@ -400,7 +400,7 @@
           "color": "#818181"
         },
         "meta": {
-          "updateAt": 1730124498435,
+          "updateAt": 1730124498437,
           "createAt": 1729944365524
         }
       }
@@ -462,7 +462,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1730124192847,
+          "updateAt": 1730124192848,
           "createAt": 1728283725572
         }
       },
@@ -762,7 +762,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1730124028712,
+          "updateAt": 1730124028715,
           "createAt": 1729942525095
         }
       },
@@ -782,7 +782,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1730124029795,
+          "updateAt": 1730124029806,
           "createAt": 1729942544441
         }
       },
@@ -802,7 +802,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1730124031194,
+          "updateAt": 1730124031197,
           "createAt": 1729942564671
         }
       },
@@ -942,7 +942,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1730124023592,
+          "updateAt": 1730124023602,
           "createAt": 1729942681469
         }
       },
@@ -982,7 +982,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1730124026073,
+          "updateAt": 1730124026074,
           "createAt": 1729942697857
         }
       },
@@ -1162,7 +1162,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1730124040292,
+          "updateAt": 1730124040298,
           "createAt": 1729942938609
         }
       },
@@ -1202,7 +1202,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1730124025195,
+          "updateAt": 1730124025206,
           "createAt": 1729942952485
         }
       },
@@ -1222,7 +1222,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1730124041245,
+          "updateAt": 1730124041255,
           "createAt": 1729942965063
         }
       },
@@ -1242,7 +1242,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1730124042160,
+          "updateAt": 1730124042173,
           "createAt": 1729942980330
         }
       },
@@ -1282,7 +1282,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1730124459076,
+          "updateAt": 1730124459084,
           "createAt": 1729943096231
         }
       },
@@ -1302,7 +1302,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1730124460760,
+          "updateAt": 1730124460764,
           "createAt": 1729943101084
         }
       },
@@ -1322,7 +1322,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1730124462897,
+          "updateAt": 1730124462898,
           "createAt": 1729943103638
         }
       },
@@ -1342,7 +1342,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1730124464334,
+          "updateAt": 1730124464342,
           "createAt": 1729943105943
         }
       },
@@ -1362,7 +1362,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1730124470592,
+          "updateAt": 1730124470593,
           "createAt": 1729943108277
         }
       },
@@ -1382,7 +1382,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1730124472753,
+          "updateAt": 1730124472757,
           "createAt": 1729943110567
         }
       },
@@ -1402,7 +1402,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1730124474822,
+          "updateAt": 1730124474828,
           "createAt": 1729943116640
         }
       },
@@ -1422,7 +1422,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1730124476728,
+          "updateAt": 1730124476733,
           "createAt": 1729943123899
         }
       },
@@ -1542,7 +1542,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1730124033589,
+          "updateAt": 1730124033592,
           "createAt": 1729943485246
         }
       },
@@ -1562,7 +1562,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1730124034578,
+          "updateAt": 1730124034589,
           "createAt": 1729943491344
         }
       },
@@ -1582,7 +1582,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1730124035441,
+          "updateAt": 1730124035443,
           "createAt": 1729943494411
         }
       },
@@ -1642,7 +1642,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1730124369685,
+          "updateAt": 1730124369693,
           "createAt": 1729943716261
         }
       },
@@ -1702,7 +1702,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1730124056184,
+          "updateAt": 1730124056185,
           "createAt": 1729943749246
         }
       },
@@ -1722,7 +1722,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1730124057829,
+          "updateAt": 1730124057840,
           "createAt": 1729943752711
         }
       },
@@ -1802,7 +1802,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1730124366087,
+          "updateAt": 1730124366099,
           "createAt": 1729944091497
         }
       },
@@ -2042,7 +2042,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1730124015707,
+          "updateAt": 1730124015733,
           "createAt": 1729944186777
         }
       },
@@ -2062,7 +2062,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1730124018796,
+          "updateAt": 1730124018798,
           "createAt": 1729944191972
         }
       },
@@ -2082,7 +2082,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1730124019909,
+          "updateAt": 1730124019920,
           "createAt": 1729944202043
         }
       },
@@ -2122,7 +2122,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1730124489076,
+          "updateAt": 1730124489085,
           "createAt": 1729944379712
         }
       },
@@ -2142,7 +2142,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1730124496865,
+          "updateAt": 1730124496875,
           "createAt": 1729944402062
         }
       },
@@ -2162,7 +2162,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1730124506292,
+          "updateAt": 1730124506296,
           "createAt": 1729944420111
         }
       },
@@ -2182,7 +2182,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1730124510831,
+          "updateAt": 1730124510835,
           "createAt": 1729944427518
         }
       },
@@ -2202,7 +2202,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1730124517032,
+          "updateAt": 1730124517034,
           "createAt": 1729944434343
         }
       },
@@ -2222,7 +2222,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1730124518893,
+          "updateAt": 1730124518898,
           "createAt": 1729944436767
         }
       },
@@ -2242,7 +2242,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1730124526004,
+          "updateAt": 1730124526009,
           "createAt": 1729944441032
         }
       },
@@ -2393,17 +2393,17 @@
         "comment": "수분 일련번호",
         "dataType": "",
         "default": "",
-        "options": 0,
+        "options": 10,
         "ui": {
-          "keys": 0,
+          "keys": 1,
           "widthName": 71,
           "widthComment": 68,
           "widthDataType": 60,
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1730124411165,
-          "createAt": 1730124381836
+          "updateAt": 1730124614127,
+          "createAt": 1730124381854
         }
       }
     },
@@ -3850,7 +3850,8 @@
       -1,
       {
         "name": 1730124394120,
-        "comment": 1730124411165
+        "comment": 1730124411165,
+        "options(primaryKey)": 1730124614110
       }
     ]
   }
