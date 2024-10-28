@@ -4,7 +4,7 @@
   "settings": {
     "width": 2000,
     "height": 2000,
-    "scrollTop": -160.1289,
+    "scrollTop": -161.1289,
     "scrollLeft": -193.5267,
     "zoomLevel": 0.72,
     "show": 431,
@@ -2391,7 +2391,7 @@
         "tableId": "os2lM1Ntdi1xZuxMcQFqo",
         "name": "moisture_sn",
         "comment": "수분 일련번호",
-        "dataType": "",
+        "dataType": "INTEGER",
         "default": "",
         "options": 10,
         "ui": {
@@ -2402,7 +2402,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1730124614127,
+          "updateAt": 1730124726511,
           "createAt": 1730124381854
         }
       }
@@ -3851,7 +3851,8 @@
       {
         "name": 1730124394120,
         "comment": 1730124411165,
-        "options(primaryKey)": 1730124614110
+        "options(primaryKey)": 1730124614110,
+        "dataType": 1730124726501
       }
     ]
   }
