@@ -19,7 +19,8 @@ const notificationRoutes = require('./routes/notifications');
 //     credential: admin.credential.cert(serviceAccount)
 //   });
 
-// dotenv.config();
+// 환경 변수 파일로드
+dotenv.config();
 
 const app = express();
 app.use(express.json()); // json 파싱 미들웨어

@@ -4,13 +4,13 @@
   "settings": {
     "width": 2000,
     "height": 2000,
-    "scrollTop": -161.1289,
+    "scrollTop": -200,
     "scrollLeft": -193.5267,
     "zoomLevel": 0.72,
     "show": 431,
     "database": 16,
     "databaseName": "O-Health",
-    "canvasType": "@dineug/erd-editor/builtin-schema-sql",
+    "canvasType": "ERD",
     "language": 1,
     "tableNameCase": 4,
     "columnNameCase": 2,
@@ -106,7 +106,7 @@
           "y": -1.7777,
           "zIndex": 2,
           "widthName": 60,
-          "widthComment": 68,
+          "widthComment": 77,
           "color": ""
         },
         "meta": {
@@ -189,7 +189,7 @@
           "x": 1093.9583,
           "y": 456.6667,
           "zIndex": 59,
-          "widthName": 72,
+          "widthName": 67,
           "widthComment": 60,
           "color": ""
         },
@@ -268,7 +268,7 @@
           "x": 760.7361,
           "y": -240.6111,
           "zIndex": 212,
-          "widthName": 69,
+          "widthName": 63,
           "widthComment": 60,
           "color": ""
         },
@@ -303,7 +303,7 @@
           "x": 1310.8564,
           "y": 82.9227,
           "zIndex": 313,
-          "widthName": 101,
+          "widthName": 91,
           "widthComment": 60,
           "color": ""
         },
@@ -395,7 +395,7 @@
           "x": 935.5814,
           "y": 821.4964,
           "zIndex": 473,
-          "widthName": 112,
+          "widthName": 102,
           "widthComment": 60,
           "color": "#818181"
         },
@@ -457,7 +457,7 @@
         "ui": {
           "keys": 1,
           "widthName": 60,
-          "widthComment": 73,
+          "widthComment": 81,
           "widthDataType": 60,
           "widthDefault": 60
         },
@@ -557,7 +557,7 @@
         "ui": {
           "keys": 0,
           "widthName": 60,
-          "widthComment": 85,
+          "widthComment": 98,
           "widthDataType": 60,
           "widthDefault": 60
         },
@@ -577,7 +577,7 @@
         "ui": {
           "keys": 0,
           "widthName": 60,
-          "widthComment": 85,
+          "widthComment": 98,
           "widthDataType": 60,
           "widthDefault": 60
         },
@@ -597,7 +597,7 @@
         "ui": {
           "keys": 0,
           "widthName": 60,
-          "widthComment": 75,
+          "widthComment": 86,
           "widthDataType": 60,
           "widthDefault": 60
         },
@@ -616,8 +616,8 @@
         "options": 0,
         "ui": {
           "keys": 0,
-          "widthName": 80,
-          "widthComment": 75,
+          "widthName": 75,
+          "widthComment": 86,
           "widthDataType": 60,
           "widthDefault": 60
         },
@@ -677,7 +677,7 @@
         "ui": {
           "keys": 0,
           "widthName": 60,
-          "widthComment": 60,
+          "widthComment": 62,
           "widthDataType": 60,
           "widthDefault": 60
         },
@@ -696,7 +696,7 @@
         "options": 0,
         "ui": {
           "keys": 0,
-          "widthName": 92,
+          "widthName": 84,
           "widthComment": 60,
           "widthDataType": 60,
           "widthDefault": 60
@@ -709,20 +709,20 @@
       "DwVTK-e1oVFvObrGdBE2c": {
         "id": "DwVTK-e1oVFvObrGdBE2c",
         "tableId": "CuLuTRU2rRWCrgdOaTcMV",
-        "name": "auth_token",
+        "name": "access_token",
         "comment": "인증 토큰",
         "dataType": "VARCHAR",
         "default": "",
         "options": 0,
         "ui": {
           "keys": 0,
-          "widthName": 65,
+          "widthName": 71,
           "widthComment": 60,
           "widthDataType": 60,
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1729942513126,
+          "updateAt": 1730351561731,
           "createAt": 1729942488855
         }
       },
@@ -736,7 +736,7 @@
         "options": 0,
         "ui": {
           "keys": 0,
-          "widthName": 81,
+          "widthName": 74,
           "widthComment": 60,
           "widthDataType": 60,
           "widthDefault": 60
@@ -757,8 +757,8 @@
         "ui": {
           "keys": 0,
           "widthName": 60,
-          "widthComment": 92,
-          "widthDataType": 62,
+          "widthComment": 105,
+          "widthDataType": 60,
           "widthDefault": 60
         },
         "meta": {
@@ -776,9 +776,9 @@
         "options": 0,
         "ui": {
           "keys": 0,
-          "widthName": 63,
+          "widthName": 60,
           "widthComment": 60,
-          "widthDataType": 62,
+          "widthDataType": 60,
           "widthDefault": 60
         },
         "meta": {
@@ -796,9 +796,9 @@
         "options": 0,
         "ui": {
           "keys": 0,
-          "widthName": 67,
+          "widthName": 62,
           "widthComment": 60,
-          "widthDataType": 62,
+          "widthDataType": 60,
           "widthDefault": 60
         },
         "meta": {
@@ -938,7 +938,7 @@
           "keys": 0,
           "widthName": 60,
           "widthComment": 60,
-          "widthDataType": 62,
+          "widthDataType": 60,
           "widthDefault": 60
         },
         "meta": {
@@ -976,9 +976,9 @@
         "options": 0,
         "ui": {
           "keys": 0,
-          "widthName": 67,
+          "widthName": 62,
           "widthComment": 60,
-          "widthDataType": 62,
+          "widthDataType": 60,
           "widthDefault": 60
         },
         "meta": {
@@ -1057,7 +1057,7 @@
         "ui": {
           "keys": 1,
           "widthName": 60,
-          "widthComment": 68,
+          "widthComment": 77,
           "widthDataType": 60,
           "widthDefault": 60
         },
@@ -1076,7 +1076,7 @@
         "options": 0,
         "ui": {
           "keys": 0,
-          "widthName": 85,
+          "widthName": 80,
           "widthComment": 60,
           "widthDataType": 60,
           "widthDefault": 60
@@ -1096,8 +1096,8 @@
         "options": 0,
         "ui": {
           "keys": 0,
-          "widthName": 126,
-          "widthComment": 60,
+          "widthName": 117,
+          "widthComment": 65,
           "widthDataType": 60,
           "widthDefault": 60
         },
@@ -1116,7 +1116,7 @@
         "options": 0,
         "ui": {
           "keys": 0,
-          "widthName": 68,
+          "widthName": 62,
           "widthComment": 60,
           "widthDataType": 60,
           "widthDefault": 60
@@ -1136,8 +1136,8 @@
         "options": 0,
         "ui": {
           "keys": 0,
-          "widthName": 98,
-          "widthComment": 81,
+          "widthName": 90,
+          "widthComment": 93,
           "widthDataType": 60,
           "widthDefault": 60
         },
@@ -1158,7 +1158,7 @@
           "keys": 0,
           "widthName": 60,
           "widthComment": 60,
-          "widthDataType": 62,
+          "widthDataType": 60,
           "widthDefault": 60
         },
         "meta": {
@@ -1196,9 +1196,9 @@
         "options": 0,
         "ui": {
           "keys": 0,
-          "widthName": 63,
+          "widthName": 60,
           "widthComment": 60,
-          "widthDataType": 62,
+          "widthDataType": 60,
           "widthDefault": 60
         },
         "meta": {
@@ -1216,9 +1216,9 @@
         "options": 0,
         "ui": {
           "keys": 0,
-          "widthName": 63,
+          "widthName": 60,
           "widthComment": 60,
-          "widthDataType": 62,
+          "widthDataType": 60,
           "widthDefault": 60
         },
         "meta": {
@@ -1236,9 +1236,9 @@
         "options": 0,
         "ui": {
           "keys": 0,
-          "widthName": 67,
+          "widthName": 62,
           "widthComment": 60,
-          "widthDataType": 62,
+          "widthDataType": 60,
           "widthDefault": 60
         },
         "meta": {
@@ -1277,7 +1277,7 @@
         "ui": {
           "keys": 1,
           "widthName": 60,
-          "widthComment": 68,
+          "widthComment": 77,
           "widthDataType": 60,
           "widthDefault": 60
         },
@@ -1378,7 +1378,7 @@
           "keys": 0,
           "widthName": 60,
           "widthComment": 60,
-          "widthDataType": 62,
+          "widthDataType": 60,
           "widthDefault": 60
         },
         "meta": {
@@ -1396,9 +1396,9 @@
         "options": 0,
         "ui": {
           "keys": 0,
-          "widthName": 63,
+          "widthName": 60,
           "widthComment": 60,
-          "widthDataType": 62,
+          "widthDataType": 60,
           "widthDefault": 60
         },
         "meta": {
@@ -1416,9 +1416,9 @@
         "options": 0,
         "ui": {
           "keys": 0,
-          "widthName": 67,
+          "widthName": 62,
           "widthComment": 60,
-          "widthDataType": 62,
+          "widthDataType": 60,
           "widthDefault": 60
         },
         "meta": {
@@ -1456,8 +1456,8 @@
         "options": 10,
         "ui": {
           "keys": 1,
-          "widthName": 69,
-          "widthComment": 68,
+          "widthName": 61,
+          "widthComment": 77,
           "widthDataType": 60,
           "widthDefault": 60
         },
@@ -1476,7 +1476,7 @@
         "options": 0,
         "ui": {
           "keys": 0,
-          "widthName": 80,
+          "widthName": 73,
           "widthComment": 60,
           "widthDataType": 60,
           "widthDefault": 60
@@ -1496,7 +1496,7 @@
         "options": 0,
         "ui": {
           "keys": 0,
-          "widthName": 81,
+          "widthName": 72,
           "widthComment": 60,
           "widthDataType": 60,
           "widthDefault": 60
@@ -1516,7 +1516,7 @@
         "options": 0,
         "ui": {
           "keys": 0,
-          "widthName": 104,
+          "widthName": 94,
           "widthComment": 60,
           "widthDataType": 60,
           "widthDefault": 60
@@ -1538,7 +1538,7 @@
           "keys": 0,
           "widthName": 60,
           "widthComment": 60,
-          "widthDataType": 62,
+          "widthDataType": 60,
           "widthDefault": 60
         },
         "meta": {
@@ -1556,9 +1556,9 @@
         "options": 0,
         "ui": {
           "keys": 0,
-          "widthName": 63,
+          "widthName": 60,
           "widthComment": 60,
-          "widthDataType": 62,
+          "widthDataType": 60,
           "widthDefault": 60
         },
         "meta": {
@@ -1576,9 +1576,9 @@
         "options": 0,
         "ui": {
           "keys": 0,
-          "widthName": 67,
+          "widthName": 62,
           "widthComment": 60,
-          "widthDataType": 62,
+          "widthDataType": 60,
           "widthDefault": 60
         },
         "meta": {
@@ -1636,8 +1636,8 @@
         "options": 10,
         "ui": {
           "keys": 1,
-          "widthName": 131,
-          "widthComment": 71,
+          "widthName": 119,
+          "widthComment": 81,
           "widthDataType": 60,
           "widthDefault": 60
         },
@@ -1656,8 +1656,8 @@
         "options": 0,
         "ui": {
           "keys": 0,
-          "widthName": 118,
-          "widthComment": 71,
+          "widthName": 107,
+          "widthComment": 87,
           "widthDataType": 60,
           "widthDefault": 60
         },
@@ -1696,9 +1696,9 @@
         "options": 0,
         "ui": {
           "keys": 0,
-          "widthName": 63,
+          "widthName": 60,
           "widthComment": 60,
-          "widthDataType": 62,
+          "widthDataType": 60,
           "widthDefault": 60
         },
         "meta": {
@@ -1716,9 +1716,9 @@
         "options": 0,
         "ui": {
           "keys": 0,
-          "widthName": 67,
+          "widthName": 62,
           "widthComment": 60,
-          "widthDataType": 62,
+          "widthDataType": 60,
           "widthDefault": 60
         },
         "meta": {
@@ -1797,7 +1797,7 @@
         "ui": {
           "keys": 1,
           "widthName": 60,
-          "widthComment": 68,
+          "widthComment": 77,
           "widthDataType": 60,
           "widthDefault": 60
         },
@@ -1816,7 +1816,7 @@
         "options": 0,
         "ui": {
           "keys": 0,
-          "widthName": 61,
+          "widthName": 60,
           "widthComment": 60,
           "widthDataType": 60,
           "widthDefault": 60
@@ -1836,7 +1836,7 @@
         "options": 0,
         "ui": {
           "keys": 0,
-          "widthName": 66,
+          "widthName": 61,
           "widthComment": 60,
           "widthDataType": 60,
           "widthDefault": 60
@@ -1856,7 +1856,7 @@
         "options": 0,
         "ui": {
           "keys": 0,
-          "widthName": 72,
+          "widthName": 67,
           "widthComment": 60,
           "widthDataType": 60,
           "widthDefault": 60
@@ -1876,7 +1876,7 @@
         "options": 0,
         "ui": {
           "keys": 0,
-          "widthName": 77,
+          "widthName": 73,
           "widthComment": 60,
           "widthDataType": 60,
           "widthDefault": 60
@@ -1896,7 +1896,7 @@
         "options": 0,
         "ui": {
           "keys": 0,
-          "widthName": 77,
+          "widthName": 72,
           "widthComment": 60,
           "widthDataType": 60,
           "widthDefault": 60
@@ -1976,7 +1976,7 @@
         "options": 0,
         "ui": {
           "keys": 0,
-          "widthName": 78,
+          "widthName": 71,
           "widthComment": 60,
           "widthDataType": 60,
           "widthDefault": 60
@@ -1997,7 +1997,7 @@
         "ui": {
           "keys": 0,
           "widthName": 60,
-          "widthComment": 60,
+          "widthComment": 62,
           "widthDataType": 60,
           "widthDefault": 60
         },
@@ -2038,7 +2038,7 @@
           "keys": 0,
           "widthName": 60,
           "widthComment": 60,
-          "widthDataType": 62,
+          "widthDataType": 60,
           "widthDefault": 60
         },
         "meta": {
@@ -2056,9 +2056,9 @@
         "options": 0,
         "ui": {
           "keys": 0,
-          "widthName": 63,
+          "widthName": 60,
           "widthComment": 60,
-          "widthDataType": 62,
+          "widthDataType": 60,
           "widthDefault": 60
         },
         "meta": {
@@ -2076,9 +2076,9 @@
         "options": 0,
         "ui": {
           "keys": 0,
-          "widthName": 67,
+          "widthName": 62,
           "widthComment": 60,
-          "widthDataType": 62,
+          "widthDataType": 60,
           "widthDefault": 60
         },
         "meta": {
@@ -2117,7 +2117,7 @@
         "ui": {
           "keys": 1,
           "widthName": 60,
-          "widthComment": 68,
+          "widthComment": 77,
           "widthDataType": 60,
           "widthDefault": 60
         },
@@ -2136,8 +2136,8 @@
         "options": 0,
         "ui": {
           "keys": 0,
-          "widthName": 107,
-          "widthComment": 98,
+          "widthName": 98,
+          "widthComment": 109,
           "widthDataType": 60,
           "widthDefault": 60
         },
@@ -2156,8 +2156,8 @@
         "options": 0,
         "ui": {
           "keys": 0,
-          "widthName": 103,
-          "widthComment": 98,
+          "widthName": 92,
+          "widthComment": 109,
           "widthDataType": 60,
           "widthDefault": 60
         },
@@ -2176,7 +2176,7 @@
         "options": 0,
         "ui": {
           "keys": 0,
-          "widthName": 69,
+          "widthName": 63,
           "widthComment": 60,
           "widthDataType": 60,
           "widthDefault": 60
@@ -2198,7 +2198,7 @@
           "keys": 0,
           "widthName": 60,
           "widthComment": 60,
-          "widthDataType": 62,
+          "widthDataType": 60,
           "widthDefault": 60
         },
         "meta": {
@@ -2216,9 +2216,9 @@
         "options": 0,
         "ui": {
           "keys": 0,
-          "widthName": 63,
+          "widthName": 60,
           "widthComment": 60,
-          "widthDataType": 62,
+          "widthDataType": 60,
           "widthDefault": 60
         },
         "meta": {
@@ -2236,9 +2236,9 @@
         "options": 0,
         "ui": {
           "keys": 0,
-          "widthName": 67,
+          "widthName": 62,
           "widthComment": 60,
-          "widthDataType": 62,
+          "widthDataType": 60,
           "widthDefault": 60
         },
         "meta": {
@@ -2257,7 +2257,7 @@
         "ui": {
           "keys": 2,
           "widthName": 60,
-          "widthComment": 73,
+          "widthComment": 81,
           "widthDataType": 60,
           "widthDefault": 60
         },
@@ -2277,7 +2277,7 @@
         "ui": {
           "keys": 2,
           "widthName": 60,
-          "widthComment": 73,
+          "widthComment": 81,
           "widthDataType": 60,
           "widthDefault": 60
         },
@@ -2297,7 +2297,7 @@
         "ui": {
           "keys": 2,
           "widthName": 60,
-          "widthComment": 73,
+          "widthComment": 81,
           "widthDataType": 60,
           "widthDefault": 60
         },
@@ -2317,7 +2317,7 @@
         "ui": {
           "keys": 2,
           "widthName": 60,
-          "widthComment": 73,
+          "widthComment": 81,
           "widthDataType": 60,
           "widthDefault": 60
         },
@@ -2337,7 +2337,7 @@
         "ui": {
           "keys": 2,
           "widthName": 60,
-          "widthComment": 73,
+          "widthComment": 81,
           "widthDataType": 60,
           "widthDefault": 60
         },
@@ -2357,7 +2357,7 @@
         "ui": {
           "keys": 2,
           "widthName": 60,
-          "widthComment": 73,
+          "widthComment": 81,
           "widthDataType": 60,
           "widthDefault": 60
         },
@@ -2376,8 +2376,8 @@
         "options": 8,
         "ui": {
           "keys": 2,
-          "widthName": 69,
-          "widthComment": 68,
+          "widthName": 61,
+          "widthComment": 77,
           "widthDataType": 60,
           "widthDefault": 60
         },
@@ -2396,8 +2396,8 @@
         "options": 10,
         "ui": {
           "keys": 1,
-          "widthName": 71,
-          "widthComment": 68,
+          "widthName": 66,
+          "widthComment": 77,
           "widthDataType": 60,
           "widthDefault": 60
         },
@@ -2408,36 +2408,6 @@
       }
     },
     "relationshipEntities": {
-      "OtE0ROPrQO2djLIHpB5Wf": {
-        "id": "OtE0ROPrQO2djLIHpB5Wf",
-        "identification": false,
-        "relationshipType": 16,
-        "startRelationshipType": 2,
-        "start": {
-          "tableId": "NNa5kvKwGI23fAwxHIVWH",
-          "columnIds": [
-            "OYeRAAfbYQG1NHxiQWfpz",
-            "mlPcDh1EyAYOlfbn_NYnH"
-          ],
-          "x": 1414.2917,
-          "y": 157.8889,
-          "direction": 2
-        },
-        "end": {
-          "tableId": "nqgRg_pZJmkhJoAK2jVAd",
-          "columnIds": [
-            "j9fcPI510dLdrKcvOm0Rz",
-            "jZcH-I5nFJ3mGivTp8jgi"
-          ],
-          "x": 1530.3008,
-          "y": 146.3116,
-          "direction": 1
-        },
-        "meta": {
-          "updateAt": 1729943801162,
-          "createAt": 1729943801162
-        }
-      },
       "bimkxovSNtVdYbEMZGbxA": {
         "id": "bimkxovSNtVdYbEMZGbxA",
         "identification": false,
@@ -2448,7 +2418,7 @@
           "columnIds": [
             "s6mgPy8zf6ncbVRCw4lkV"
           ],
-          "x": 436.2221,
+          "x": 439.2221,
           "y": 242.2223,
           "direction": 2
         },
@@ -2476,7 +2446,7 @@
           "columnIds": [
             "s6mgPy8zf6ncbVRCw4lkV"
           ],
-          "x": 77.05543333333333,
+          "x": 77.55543333333333,
           "y": 486.2223,
           "direction": 8
         },
@@ -2485,7 +2455,7 @@
           "columnIds": [
             "pG2_LRZqPUfq3hGBoUPvx"
           ],
-          "x": 178.7223,
+          "x": 179.2223,
           "y": 825.6111,
           "direction": 4
         },
@@ -2504,7 +2474,7 @@
           "columnIds": [
             "s6mgPy8zf6ncbVRCw4lkV"
           ],
-          "x": 220.72209999999998,
+          "x": 222.22209999999998,
           "y": 486.2223,
           "direction": 8
         },
@@ -2532,7 +2502,7 @@
           "columnIds": [
             "s6mgPy8zf6ncbVRCw4lkV"
           ],
-          "x": 436.2221,
+          "x": 439.2221,
           "y": 79.55563333333333,
           "direction": 2
         },
@@ -2560,7 +2530,7 @@
           "columnIds": [
             "s6mgPy8zf6ncbVRCw4lkV"
           ],
-          "x": 436.2221,
+          "x": 439.2221,
           "y": 404.88896666666665,
           "direction": 2
         },
@@ -2588,7 +2558,7 @@
           "columnIds": [
             "s6mgPy8zf6ncbVRCw4lkV"
           ],
-          "x": 364.38876666666664,
+          "x": 366.88876666666664,
           "y": 486.2223,
           "direction": 8
         },
@@ -2616,7 +2586,7 @@
           "columnIds": [
             "mlPcDh1EyAYOlfbn_NYnH"
           ],
-          "x": 1184.7361,
+          "x": 1180.7361,
           "y": -116.6111,
           "direction": 2
         },
@@ -2635,39 +2605,9 @@
         }
       }
     },
-    "indexEntities": {
-      "Gfv-R9mpgMTKeS1EHyowD": {
-        "id": "Gfv-R9mpgMTKeS1EHyowD",
-        "name": "",
-        "tableId": "NNa5kvKwGI23fAwxHIVWH",
-        "indexColumnIds": [],
-        "seqIndexColumnIds": [],
-        "unique": false,
-        "meta": {
-          "updateAt": 1729943593701,
-          "createAt": 1729943593701
-        }
-      }
-    },
+    "indexEntities": {},
     "indexColumnEntities": {},
-    "memoEntities": {
-      "HYD30z68ncKAhf8AGEAcw": {
-        "id": "HYD30z68ncKAhf8AGEAcw",
-        "value": "",
-        "ui": {
-          "x": 496.90833333333336,
-          "y": 93.05555555555551,
-          "zIndex": 474,
-          "width": 116,
-          "height": 100,
-          "color": ""
-        },
-        "meta": {
-          "updateAt": 1729945202644,
-          "createAt": 1729945202644
-        }
-      }
-    }
+    "memoEntities": {}
   },
   "lww": {
     "settings.databaseName": [
@@ -2843,7 +2783,7 @@
       1729942488854,
       -1,
       {
-        "name": 1729942496354,
+        "name": 1730351561730,
         "dataType": 1729942509815,
         "comment": 1729942513125
       }
@@ -3335,12 +3275,6 @@
         "comment": 1729943570951
       }
     ],
-    "Gfv-R9mpgMTKeS1EHyowD": [
-      "indexEntities",
-      1729943593700,
-      1729943594975,
-      {}
-    ],
     "V2OPxh2QRi41Liv2ks0qt": [
       "tableColumnEntities",
       1729943617379,
@@ -3443,12 +3377,6 @@
         "default": 1729943801159,
         "comment": 1729943801159
       }
-    ],
-    "OtE0ROPrQO2djLIHpB5Wf": [
-      "relationshipEntities",
-      1729943801159,
-      1729944621358,
-      {}
     ],
     "HFjm9OM4C1Qd5458YKyOj": [
       "tableEntities",
@@ -3836,12 +3764,6 @@
       "relationshipEntities",
       1729944641021,
       -1,
-      {}
-    ],
-    "HYD30z68ncKAhf8AGEAcw": [
-      "memoEntities",
-      1729945202643,
-      1729945204598,
       {}
     ],
     "zwl79OjOcoMfdQFNafXTf": [

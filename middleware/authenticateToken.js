@@ -17,16 +17,20 @@ const authenticateToken = (req,res,next) => {
     });
 };
 
+// 리프레시 토큰 인증 미들웨어
 const authenticateRefreshToken = (req, res, next) => {
-    
     const refreshToken = req.body.refreshToken;
 
-    if(!refreshToken) return res.sendStatus(401);
+    if (!refreshToken) return res.status(401).json({ message: 'Refresh token required' });
 
     jwt.verify(refreshToken, process.env.JWT_SECRET_REFRESH, (err, user) => {
-        
-        if(err) return res.sendStatus(403);
-
+        if (err) {
+            // 리프레시 토큰 만료 시 로그인 재요청
+            if (err.name === 'TokenExpiredError') {
+                return res.status(403).json({ message: 'Refresh token expired. Please log in again.' });
+            }
+            return res.status(403).json({ message: 'Invalid refresh token' });
+        }
         req.user = user;
         next();
     });
