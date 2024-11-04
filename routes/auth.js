@@ -46,6 +46,12 @@ router.post('/id-check', async (req,res) => {
     }
 });
 
+// test
+router.post('/test', async (req,res) => {
+    console.log("test");
+    res.status(200).json({ test : 'success !'});
+});
+
 // pw 체크
 router.post('/pw-check', async (req,res) => {
     const { password1, password2 } = req.body;

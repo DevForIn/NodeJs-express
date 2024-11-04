@@ -48,9 +48,6 @@ app.use('/api/v1', authRoutes);
 // 인증이 필요한 모든 API에 `/api/v1` 경로 적용
 app.use('/api/v2', authenticateToken);
 
-// 푸시 알림 라우트 추가
-app.use('/api/v3', notificationRoutes);
-
 
 app.get('/', function (req, res) {
     res.send('test');
